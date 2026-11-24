@@ -1,0 +1,15 @@
+{
+  "V_wire": -11000.0,
+  "nodes": 19931,
+  "triangles": 38332,
+  "E_max_range_MV_m": [
+    10.333,
+    15.877
+  ],
+  "E_mean_all_MV_m": 11.110545454545454,
+  "analytic_wire_row_vs_plate_MV_m": 9.307621909730138,
+  "onset_smooth_MV_m": 14.6,
+  "voltage_for_onset_on_hottest_wire_kV": 10.115261069471563,
+  "charge_wires_nC_m": -431.57949509733106,
+  "charge_tubes_nC_m": 432.62548404990713
+}

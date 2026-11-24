@@ -1,0 +1,9 @@
+{
+  "I_uA": 122.5,
+  "thrust_mN": 7.450608776364301,
+  "d_axial_mm": 12.164259226717228,
+  "d_axial_mm_at_45uA": 12.055553624588713,
+  "gap_mean_potential_change_V": -644.8137226684612,
+  "surface_field_inner_wire_MV_m": 6.543059112181114,
+  "surface_field_end_wire_MV_m": 11.10656701596152
+}

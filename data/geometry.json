@@ -1,0 +1,132 @@
+{
+  "_about": "All inputs for the EHD thruster analysis. Cleaned 2026-11-23: superseded and contradictory entries removed (wire is bare 36 AWG copper, not enamelled 28 AWG). Units are in the key names.",
+  "cad_source": "Bladeless_Fan.STEP (SolidWorks, file dated 2022-10-31)",
+  "test_site": "GITAM Visakhapatnam, 17.7806 N 83.3747 E, workshop without AC",
+  "test_date_time": "2023-08-15, 12:00-15:00 IST",
+  "emitter": {
+    "wire": "bare copper, 36 AWG (0.127 mm), gauge from memory (user-confirmed: no coating)",
+    "preparation": "several small craft-knife cuts along each wire, only inside the 65 mm opening",
+    "count": 11,
+    "face": "inner face of the wire frame, facing the tubes (confirmed)",
+    "lengths_in_opening_mm": [
+      48.728,
+      55.066,
+      59.082,
+      62.349,
+      64.363,
+      65.0,
+      64.363,
+      62.349,
+      59.082,
+      55.066,
+      48.728
+    ],
+    "offsets_from_centre_mm_real": [
+      21.51,
+      17.27,
+      13.55,
+      9.19,
+      4.54,
+      0.0
+    ],
+    "pitch_mm_real": "3.7-4.7 (CAD sketch)",
+    "pitch_mm_model": 4.3,
+    "total_active_length_mm": 644.2
+  },
+  "wire_diameter_mm": 0.127,
+  "collector": {
+    "tubes": "7 bare copper tubes, 6 mm OD, 85 mm long",
+    "centres_mm": [
+      -27,
+      -18,
+      -9,
+      0,
+      9,
+      18,
+      27
+    ],
+    "pitch_mm": 9.0,
+    "mounting": "glued over 4.2 mm half-seats; tube surface protrudes 5.142 mm (centre 2.142 mm) beyond frame face, towards the wire frame",
+    "protrusion_mm": 5.142,
+    "open_area_fraction": 0.333,
+    "open_flow_area_mm2": 1106.0
+  },
+  "opening_diameter_mm": 65.0,
+  "flow_area_mm2": 3318.0,
+  "open_flow_area_mm2": 1106.0,
+  "frame_gap_mm": 16.25,
+  "frame_gap_uncertainty_mm": 1.25,
+  "frame_gap_basis": "13 M8x1.25 thread crests between the frame faces",
+  "gap_mm": 11.11,
+  "gap_range_mm": [
+    9.86,
+    12.36
+  ],
+  "gap_definition": "wire plane to tube front surface = frame gap - 5.142 mm",
+  "wire_to_tube_shortest_gap_mm_real": {
+    "0": 11.11,
+    "4.54": 11.8,
+    "9.19": 11.11,
+    "13.55": 11.79,
+    "17.27": 11.13,
+    "21.51": 11.54
+  },
+  "emitter_length_model_mm": 646.3,
+  "polarity": "emitter negative (most likely; leads unmarked)",
+  "polarity_evidence": "~1 month of repeated tests: corona hiss at wire side in one lead orientation only; never in the reverse",
+  "air": {
+    "pressure_kPa": 99.92,
+    "temperature_C": 33.0,
+    "relative_humidity_pct": 59,
+    "density_moist_kg_m3": 1.124,
+    "absolute_humidity_g_m3": 20.9,
+    "source": "Open-Meteo historical archive (reanalysis grid cell at 17.82N 83.37E, 43 m), hourly 12-15h",
+    "check": "anemometer display read 33.6-33.7 C during the run"
+  },
+  "pressure_kPa": 99.92,
+  "temperature_C": 33.0,
+  "air_density_moist_kg_m3": 1.124,
+  "mobility_m2_per_Vs": 0.0002,
+  "mobility_range_m2_per_Vs": [
+    0.00018,
+    0.00022
+  ],
+  "mobility_note": "negative ions in humid air (~20 g/m3 water): expect ~1.8-2.2e-4; treat as fit parameter",
+  "supply": {
+    "module": "unbranded \"DC 3-6V to 400kV\" boost module (KitsGuru listing), pulsed output of unknown waveform",
+    "battery": "single 18650 Li-ion, 3.7 V nominal, 2000 mAh, 7.4 Wh",
+    "battery_voltage_after_charge_V": 3.7,
+    "note": "3.7 V open-circuit after charging is ~40-50% charge for Li-ion (full = 4.2 V); sags further under 2-5 A module load",
+    "spark_test": {
+      "continuous_arc_gap_mm": 4,
+      "intermittent_arc_up_to_mm": [
+        7,
+        8
+      ],
+      "max_spark_gap_mm": 7.5,
+      "electrodes": "straight bare copper output leads, flush-cut with wire cutter, tip to tip",
+      "peak_voltage_kV_estimate": 11,
+      "peak_voltage_kV_range": [
+        9,
+        14
+      ],
+      "basis": "needle-gap sparkover data (sharp cut tips); upper end allows for blunter tips and pulsed waveform"
+    }
+  },
+  "anemometer": {
+    "model": "Metravi ET-99A (vane)",
+    "accuracy": "+-(0.5 m/s + 5%)",
+    "resolution_mps": 0.1,
+    "position": "hand-held, roughly on centreline, ~60 mm downstream of the back of the collector tubes",
+    "x_over_D": 0.92,
+    "display": "readings shown with 0.01 m/s steps although the spec states 0.1 m/s resolution; values recorded as displayed",
+    "vane_size": "not documented; 25 mm assumed for averaging in the CFD comparison"
+  },
+  "velocity_location": "jet",
+  "background_flow": "still air: fans off, away from windows; 0.00 m/s measured with thruster off (~48 s)",
+  "observation_smooth_vs_nicked": {
+    "smooth_wire": "very faint hiss, no airflow visible with incense-stick smoke",
+    "nicked_wire": "clear hiss, visible flow; anemometer 1.21 m/s steady",
+    "implied_current_ratio": "(1.21 / v_smoke)^2 = ~40-150x for a smoke threshold of 0.1-0.2 m/s, assuming the same flow losses"
+  }
+}

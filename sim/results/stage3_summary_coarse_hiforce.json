@@ -1,0 +1,30 @@
+{
+  "averaging_window_s": [
+    1.0,
+    2.0
+  ],
+  "samples": 51,
+  "force_per_m_N": 0.14949486430492137,
+  "ideal_2d_actuator_velocity_mps": 2.0229646813448894,
+  "cfd_velocity_at_anemometer_mps": 1.292013698063154,
+  "cfd_velocity_at_anemometer_std_over_time_mps": 0.29206497226563727,
+  "cfd_centreline_velocity_at_anemometer_mps": 1.4021024086164489,
+  "cfd_mean_slot_velocity_mps": 2.715703970145311,
+  "survival_ratio_r": 0.6386733836619476,
+  "jet_momentum_flux_N_per_m": {
+    "40mm": 0.07061078058644714,
+    "77mm": 0.07647423209012247,
+    "120mm": 0.07820298152729317
+  },
+  "momentum_flux_fraction_of_force_at_anemometer": 0.5115508980572047,
+  "current_if_only_this_run_r_uA": 111.05562660917369,
+  "efficiency_if_only_this_run_r_pct": 0.1352089874621412,
+  "anemometer_trend_mps_per_s": -0.005927765450865574,
+  "anemometer_mean_batch_se_mps": 0.02906206247624911,
+  "anemometer_thirds_mps": [
+    1.2552762319324366,
+    1.3487384405703642,
+    1.2720264216866612
+  ],
+  "note": "current_if_only_this_run_r = stage-2 current / r^2 using this single run's r; the headline current comes from sensitivity.py, which combines meshes, force effect, 2D->3D and input ranges. batch_se: standard error of the mean from 6 consecutive batch means (accounts for autocorrelation)."
+}

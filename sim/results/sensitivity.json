@@ -1,0 +1,103 @@
+{
+  "onset": {
+    "smooth_wire_onset_kV_per_wire": [
+      10.12,
+      13.13,
+      14.51,
+      15.14,
+      15.47,
+      15.54,
+      15.48,
+      15.16,
+      14.51,
+      13.15,
+      10.13
+    ],
+    "wires_above_onset_at_voltage": {
+      "9 kV": 0,
+      "10 kV": 0,
+      "11 kV": 2,
+      "12 kV": 2,
+      "13 kV": 2,
+      "14 kV": 4
+    },
+    "inner7_min_onset_kV_nominal": 14.51,
+    "inner7_min_onset_kV_pessimistic": 11.75,
+    "pessimistic_corner": "gap 9.86 mm and Peek factor m = 0.9",
+    "note": "Laplace fields: below onset there is no space charge, so onset is set by these fields"
+  },
+  "survival_ratio_r": {
+    "nominal": 0.605,
+    "cfd_range": [
+      0.571,
+      0.674
+    ],
+    "force_effect_factor": 1.047,
+    "plus_2d_to_3d": "x 0.7-1.3 assumed"
+  },
+  "nominal": {
+    "current_uA": 122.5,
+    "efficiency_pct_at_11kV": 0.123,
+    "power_W_at_11kV": 1.35,
+    "space_charge_share_at_11kV": 0.21
+  },
+  "current_uA_5_50_95": [
+    34.234,
+    115.694,
+    324.768
+  ],
+  "efficiency_pct_5_50_95": [
+    0.051,
+    0.118,
+    0.252
+  ],
+  "power_W_5_50_95": [
+    0.384,
+    1.314,
+    3.774
+  ],
+  "space_charge_share_5_50_95": [
+    0.05,
+    0.181,
+    0.563
+  ],
+  "current_uA_from_anemometer_alone": [
+    35.3,
+    262.3
+  ],
+  "smooth_to_nicked_current_ratio": [
+    37,
+    146
+  ],
+  "current_factor_5_95_each_input_alone": {
+    "anemometer": [
+      0.34,
+      2.01
+    ],
+    "2d_to_3d": [
+      0.62,
+      1.88
+    ],
+    "cfd_r": [
+      0.82,
+      1.1
+    ],
+    "mobility": [
+      0.91,
+      1.09
+    ],
+    "gap": [
+      0.91,
+      1.11
+    ]
+  },
+  "thrust_per_power_mN_per_W": {
+    "ion_force_per_watt_nominal": 5.53,
+    "jet_thrust_per_watt_nominal": 2.03,
+    "jet_thrust_per_watt_5_50_95": [
+      1.024,
+      2.043,
+      3.693
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+video,t_start_s,t_end_s,velocity_mps,display_temp_C,note
+WA_23.06.38,1,5,0.00,33.6,before flow reaches vane
+WA_23.06.38,6,6,0.09,33.7,vane spin-up
+WA_23.06.38,7,7,0.19,33.7,vane spin-up
+WA_23.06.38,8,9,1.07,33.7,spin-up
+WA_23.06.38,10,14,1.13,33.7,steady
+WA_23.06.38,15,17,1.18,33.7,steady
+WA_23.06.38,18,28,1.30,33.7,steady (peak)
+WA_23.06.38,29,30,1.24,33.7,steady
+WA_23.06.38,31,48,1.18,33.7,steady to end of video
+Video_2,26,27,0.55,33.5,anemometer being positioned; rising
+Video_2,28,29,0.64,33.6,rising
+Video_2,30,32,0.74,33.6,rising
+Video_2,33,35,0.83,33.6,rising
+Video_2,35,35,1.18,33.6,last readable frame
+Video_1,0,26,0.00,33.4,zero throughout; thruster OFF; still-air baseline
+Video_3,0,22,0.00,,zero throughout; thruster OFF; still-air baseline

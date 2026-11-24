@@ -1,0 +1,8 @@
+# Python 3.10+ (developed on 3.13). Versions used to produce the results in RESULTS.md.
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+gmsh==4.15.2
+scikit-fem==12.0.2
+meshio==5.3.5
+# Stage 3 also needs OpenFOAM (ESI / openfoam.com). Results made with v1912; reproduced with v2606.

@@ -1,0 +1,14 @@
+{
+  "tubes": {
+    "pressure_N_per_m": 0.024897264874492092,
+    "viscous_N_per_m": 0.004062589946521185,
+    "total_N_per_m": 0.02895985482101328
+  },
+  "frames": {
+    "pressure_N_per_m": 0.001528352779398267,
+    "viscous_N_per_m": 3.9007651795281174e-05,
+    "total_N_per_m": 0.0015673604311935482
+  },
+  "ion_force_N_per_m": 0.04671714265591838,
+  "wall_drag_fraction_of_ion_force": 0.6534478248604846
+}

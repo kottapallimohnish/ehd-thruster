@@ -1,0 +1,10 @@
+{
+  "straight_gap_mm": 11.11,
+  "lines": 264,
+  "reached_tube": 263,
+  "axial_disp_field_weighted_mm": 12.105294181029254,
+  "axial_disp_over_gap": 1.0895854348361165,
+  "mean_len_all_mm": 18.226913731089073,
+  "field_weighted_len_all_mm": 17.530184974543435,
+  "ratio_field_weighted_to_gap": 1.5778744351524245
+}
